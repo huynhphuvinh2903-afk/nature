@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore the Natural World</title>
+  <meta name="description" content="A simple accessible webpage celebrating nature, wildlife, and outdoor exploration.">
+  <style>
+    :root {
+      color-scheme: light;
+      --green: #205b45;
+      --pale: #eef5ef;
+      --ink: #20312a;
+      --white: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      color: var(--ink);
+      background: var(--pale);
+    }
+    header {
+      padding: 2.5rem 1.25rem;
+      text-align: center;
+      color: var(--white);
+      background: var(--green);
+    }
+    header h1 { margin: 0 0 .5rem; font-size: clamp(2rem, 5vw, 3rem); }
+    nav { margin-top: 1rem; }
+    nav a { color: var(--white); margin: 0 .75rem; }
+    main { max-width: 1050px; margin: auto; padding: 2rem 1.25rem; }
+    section {
+      background: var(--white);
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      border-radius: 12px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+    }
+    figure { margin: 0; }
+    figure img {
+      display: block;
+      width: 100%;
+      height: 210px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    figcaption { padding-top: .5rem; }
+    a { color: #145b40; }
+    a:focus, a:hover { outline: 3px solid #d58b22; outline-offset: 3px; }
+    footer {
+      padding: 1.25rem;
+      text-align: center;
+      color: var(--white);
+      background: var(--green);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Explore the Natural World</h1>
+    <p>Discover the beauty of forests, mountains, and wild places.</p>
+    <nav aria-label="Main navigation">
+      <a href="#discover">Discover</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#learn">Learn More</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="discover">
+      <h2>Why Nature Matters</h2>
+      <p>Spending time outdoors can help us appreciate the environment and understand why protecting natural habitats is important. Small choices, such as reducing waste and respecting wildlife, can make a difference.</p>
+      <h3>Three ways to enjoy nature responsibly</h3>
+      <ul>
+        <li>Stay on marked trails to protect plants and soil.</li>
+        <li>Take reusable water bottles and bring your rubbish home.</li>
+        <li>Observe wildlife from a safe distance and never feed wild animals.</li>
+      </ul>
+    </section>
+
+    <section id="gallery">
+      <h2>Scenes from the Outdoors</h2>
+      <div class="gallery">
+        <figure>
+          <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=900&q=80" alt="Sunlight filtering through a green forest filled with tall trees">
+          <figcaption>A peaceful green forest.</figcaption>
+        </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&q=80" alt="Rugged mountain peaks rising above a valley under a bright sky">
+          <figcaption>Majestic mountain peaks.</figcaption>
+        </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=900&q=80" alt="Still alpine lake reflecting surrounding mountains and evergreen trees">
+          <figcaption>A quiet mountain lake.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="learn">
+      <h2>Keep Exploring</h2>
+      <p>Learn more about conservation and practical ways to care for the planet through the World Wildlife Fund.</p>
+      <p><a href="https://www.worldwildlife.org/" target="_blank" rel="noopener noreferrer">Visit the World Wildlife Fund website</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Created for an introductory HTML project.</p>
+  </footer>
+</body>
+</html>
